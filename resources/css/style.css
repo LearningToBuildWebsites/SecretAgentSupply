@@ -1,0 +1,311 @@
+/* Create a Root font-family, font-size, etc., in here! */
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 1.0rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  overflow: visible;
+}
+
+header {
+  position: relative;
+  width: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.headerContent {
+  width: 960px;
+  display: flex;
+  align-items: center;
+}
+
+.headerContent img {
+  margin-left: 0.5rem;
+  height: 1.5rem;
+  width: auto;
+}
+
+.headerContent p {
+  margin: 0.66rem 1.0rem;
+}
+
+.motorcycle {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: inherit;
+  height: 25rem;
+}
+
+.newArrivalContainer {
+  width: 960px;
+}
+
+.newArrival {
+  position: relative;
+  max-width: inherit;
+  background-color: black;
+  margin-top: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  width: 20rem;
+  font-weight: bold;
+}
+
+.sportBikes {
+  margin-top: 1.0rem;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: firebrick;
+  width: inherit;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 960px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.specials {
+  max-width: 960px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.special {
+  width: 29.17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 4px black;
+}
+
+.gadget1and2, .gadget3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 13rem;
+}
+
+.gadget1and2 img {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 9rem;
+  width: 9.4rem;
+}
+
+.gadget3 img {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: 5rem;
+  width: 9.4rem;
+}
+
+.specialBanner {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.specialBanner p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.info {
+  max-width: 960px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.infoItem {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.infoBanner {
+  width: 100%;
+  display: flex;
+  background-color: black;
+}
+
+.infoBanner p {
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+footer {
+  position: relative;
+  width: inherit;
+  height: 10rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.footerContent {
+  width: 960px;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 470px) {
+  .motorcycle {
+    height: 15rem;
+  }
+
+  .newArrivalContainer {
+    width: 100%;
+    display: flex;
+/*    align-self: baseline;*/
+  }
+
+  .newArrival {
+    width: 100%;
+    margin-top: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+  }
+
+  .newArrivalSmallFontSize {
+    font-size: 0.77rem;
+  }
+
+  .sportBikes {
+    font-size: 1rem;
+  }
+
+  nav {
+    height: 0.7rem;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .specials, .info {
+    max-width: 90%;
+  }
+
+  .special, .infoItem {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .infoItem {
+    height: 5rem;
+  }
+
+  .footer {
+  }
+
+  .footerContent {
+    width: inherit;
+  }
+
+  .footerContent p {
+  }
+}
+
+@media only screen and (max-width: 363px) {
+
+  nav {
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 471px) {
+  .special {
+    width: 47%;
+  }
+
+  .infoItem {
+    width: 39%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .glasses {
+    display: none;
+  }
+
+  .menuItem {
+    display: none;
+  }
+
+  .specials, .info {
+    width: 100%;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  .gadget1and2, .gadget3 {
+    width: 98%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .menu {
+    display: none;
+  }
+
+  .specials, .info {
+    width: 960px;
+  }
+}
